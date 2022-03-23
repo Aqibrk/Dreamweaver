@@ -11,7 +11,7 @@ body{
     background-image: linear-gradient(to right, rgb(53, 223, 214, 0.842) , rgba(53, 223, 214, 0.842) , rgb(61, 87, 206));
 }
 .container{
-    width: 50%;
+    width: 70%;
     height: 90%;
     background-color: #fff;
     border-radius: 5px;
@@ -23,7 +23,7 @@ body{
     justify-content: center;
 }
 .box{
-    width: 70%;
+    width: 80%;
     height: auto;
     padding-bottom: 20px;
     display: flex;
@@ -33,75 +33,13 @@ body{
 }
 h3{
     font-size: 35px;
-    margin: 15px;
+    top: 0;
 }
-@media (max-width:950px) {.container{height: 70%;}}
-@media (max-width:700px) {.container{height: 67%;}}
-    @media (max-width:940px) {
-        .container{
-            width: 90%;
-            height: 60%;}
-        h3{
-            font-size: 24px;
-            margin: 12px;
-           
-        }
-        .name input{
-           
-            width: 100%;
-            height: 30px;
-        }
-      
-        .email input{
-            width: 100%;
-            height: 30px;
-        }
-        .password input{
-            width: 100%;
-            height: 30px;
-        }
-        .button{
-            height: 20px;
-        }
-    }
-    @media (max-width:600px) {
-        .container{
-            width: 60%;
-            height: 60%;
-            padding-bottom: 20px;
-        }
-        h3{
-            font-size: 18px;
-            margin: 8px;
-           
-        }
-        .name input{
-           
-            width: 100%;
-            height: 10px;
-            margin-top: 10px;
-        }
-      
-        .email input{
-            width: 100%;
-            height: 10px;
-        }
-        .password input{
-            width: 100%;
-            height: 10px;
-        }
-        .button{
-            height: 10px;
-        }
-        .box{
-            margin-top: 30px;
-        }
-      
-    }
 .name{
     width: 100%;
     position: relative;
     margin-bottom: 15px;
+    margin-top: 30px;
 }
 .name i{
     position: absolute;
@@ -129,12 +67,14 @@ h3{
     width: 100%;
     position: relative;
     margin-bottom: 15px;
+    margin-top: 20px;
     
 }
 .password{
     width: 100%;
     position: relative;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 .email i{
     position: absolute;
@@ -151,6 +91,7 @@ h3{
     transform: translateY(-50%);
     font-size: 20px;
     color: #bbb;
+   
 }
 .email input{
     width: 100%;
@@ -179,37 +120,13 @@ h3{
     color: #bbb;
     font-weight: 500;
 }
-.message-box{
-    width: 100%;
-    position: relative;
-    margin-bottom: 15px;
-}
-.message-box i{
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #bbb;
-}
-.message-box textarea{
-    width: 100%;
-    padding: 20px 60px;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    background-color: #eee;
-    border-radius: 5px;
-}
-.message-box textarea::placeholder{
-    color: #bbb;
-    font-weight: 500;
-}
 
 .button{
     width: 100%;
     cursor: pointer;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 .button button{
     width: 100%;
@@ -228,6 +145,7 @@ h3{
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
+    
 }
 .message .success{
     font-size: 20px;
@@ -254,4 +172,128 @@ h3{
     100%{
         transform: scale(1);
     }
+}
+
+
+@media (max-width:1000px) {
+
+    .container{
+    width: 96%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 90%;
+    height: auto;
+    padding-bottom: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 30px;
+    margin: 5px;
+    margin-top: 0;
+   
+}
+
+.name{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    height: 30px;
+}
+.name i{
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.name input{
+    width: 100%;
+    padding: 15px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 5px;
+    
+}
+.name input::placeholder{
+    color: #bbb;
+    font-weight: 300;
+}
+.email{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    height: 30px;
+    
+}
+.password{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    height: 30px;
+}
+.email i{
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.password i{
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+   
+}
+.email input{
+    width: 100%;
+    padding: 15px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.email input::placeholder{
+    color: #bbb;
+    font-weight: 300;
+}
+
+.password input{
+    width: 100%;
+    padding: 15px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.password input::placeholder{
+    color: #bbb;
+    font-weight: 300;
+}
+
 }
