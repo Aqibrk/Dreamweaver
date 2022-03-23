@@ -179,11 +179,11 @@ h3{
 
     .container{
     width: 96%;
-    height: 60%;
+    height: 80%;
     background-color: #fff;
     border-radius: 3px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: flex;
@@ -296,4 +296,130 @@ h3{
     font-weight: 300;
 }
 
+}
+
+
+@media (max-width:700px) {
+    .container{
+        width: 90%;
+        height: 80%;
+        background-color: #fff;
+        border-radius: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+    }
+    
+.box{
+    width: 90%;
+    height: auto;
+    padding-bottom: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-size: 30px;
+    margin: 5px;
+    margin-top: 0;
+   
+}
+
+.name{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 20px;
+}
+.name i{
+    position: absolute;
+    top: 136%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #bbb;
+}
+.name input{
+    width: 100%;
+    padding: 15px 50px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 3px;
+    margin-left: 0px;
+    
+}
+.name input::placeholder{
+    color: #bbb;
+    font-weight: 250;
+}
+.email{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 20px;
+}
+.password{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 20px;
+}
+.email i{
+    position: absolute;
+    top: 137%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #bbb;
+}
+.password i{
+    position: absolute;
+    top: 138%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #bbb;
+   
+}
+.email input{
+    width: 100%;
+    padding: 15px 50px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 3px;
+    margin-left: 0px;
+    
+}
+.email input::placeholder{
+    color: #bbb;
+    font-weight: 250;
+}
+
+.password input{
+    width: 100%;
+    padding: 15px 50px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 3px;
+    margin-left: 0px;
+    
+}
+.password input::placeholder{
+    color: #bbb;
+    font-weight: 250;
+}
 }
