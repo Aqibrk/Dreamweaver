@@ -39,7 +39,7 @@ h3{
 @media (max-width:700px) {.container{height: 67%;}}
     @media (max-width:940px) {
         .container{
-            width: 60%;
+            width: 90%;
             height: 60%;}
         h3{
             font-size: 24px;
