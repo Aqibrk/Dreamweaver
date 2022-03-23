@@ -33,9 +33,45 @@
   border-radius: 4px;
 }
                /* scroll up css end  */
-</style>
+     /* web loading css  + javascript*/    
+       #all{
+         display: none;
+       }
+       #loader{
+            /* border: 2px solid red; */
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #loader img{
+          width: 100%;
+          height: 100vh;
+        }
+    
+      </style>
+         <script>
+          window.onload=function(){
+              // alert('done');
+              document.getElementById('loader').style.display="none";
+              document.getElementById('all').style.display="block";
+          }
+      
+      </script>
+
 </head>
 <body>
+    
+    
+      <div id="loader">
+    <img src="images/doto.gif" alt="">
+</div>
+      <div id="all">
     <!-- nav bar start -->
     <nav>
         <div class="logo"> <a href="index.html"> Dream weaver</a></div>
@@ -114,7 +150,7 @@
       <a href="https://twitter.com/Aqibkha21615959?t=TR8PLs1U9pLsSx6eSxjD1g&s=09"><i class="fa fa-twitter"></i></a>
       </div>  
       <br>
-     <a href="">  <h2>login</h2> </a>
+     <a href="form.html"  style="text-decoration: none;">  <h2>login</h2> </a>
      
     </div>
     <div class="mainn"> 
@@ -173,7 +209,7 @@
      
           
           
-
+           </div>
               
          
                   
