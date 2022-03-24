@@ -428,6 +428,22 @@ background: none;
     
          /* footer uper img */
     @media (max-width:900px) {
+        .describe .box{
+            width: 90%;
+            padding: 5px 0px;
+            height: 300px;
+           Flex-direction:row;
+           Flex-wrap: wrap;
+            margin-left: 50px;
+           margin-right: 50px;
+           z-index:9999;
+           background: rgba(192, 28, 118, 0.904);
+           border-radius: 5px;
+           outline: none;
+           box-shadow: 2px 2px 2px 5px rgba(54, 89, 216, 0.459); 
+           margin-bottom: 40px;
+
+        }
         .footer-text{
             width: 100%;
             height: max-content;
