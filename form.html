@@ -13,9 +13,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <style>
+                       /* scroll up css end  */
+                /* web loading css  + javascript*/    
+       #all{
+         display: none;
+       }
+       #loader{
+            /* border: 2px solid red; */
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #loader img{
+          width: 100%;
+          height: 100vh;
+        }
+</style>
+<script>
+  window.onload=function(){
+      // alert('done');
+      document.getElementById('loader').style.display="none";
+      document.getElementById('all').style.display="block";
+  }
+
+</script>
 </head>
 
 <body>
+    <div id="loader">
+        <img src="images/doto.gif" alt="">
+    </div>
+          <div id="all">
 
     <!-- Simple Form using HTML & CSS by Aqib khan -->
 
@@ -33,7 +68,7 @@
         </form>
 
     </div>
-
+</div>
 </body>
 
 </html>
