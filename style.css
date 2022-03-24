@@ -335,6 +335,8 @@ margin-bottom: 10px;
         Flex-direction:row;
        Flex-wrap: wrap;
         overflow: auto;
+        padding: 20px 20px;
+    
     }
     .footer-text .box a{
         text-decoration: none;
