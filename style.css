@@ -334,6 +334,7 @@ margin-bottom: 10px;
         height: max-content;
         Flex-direction:row;
        Flex-wrap: wrap;
+        overflow: auto;
     }
     .footer-text .box a{
         text-decoration: none;
