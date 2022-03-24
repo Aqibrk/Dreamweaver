@@ -1,52 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form - Alert Message</title>
-    <!-- <link rel="stylesheet" href="37successfulmsgonsubmit.css"> -->
-    <link rel="stylesheet" href="form2.css">
+    <title>Simple Form Design by WasiArain</title>
 
-    <!-- font Awesome CDN -->
-    <link rel="stylesheet" 
-    href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
-   integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="form2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
+
 <body>
-    
+
+    <!-- Simple Form using HTML & CSS by Aqib khan -->
+
     <div class="container">
-        <div class="box">
-            <h3>  Regestration Form</h3>
-            <div class="name">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Name" id="name">
-            </div>
-            <div class="email">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Email" id="email">
-            </div>
-            <div class="password">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="password" id="password">
-            </div>
-          
-            <div class="button">
-                <button id="send" onclick="message()">Send</button>
-            </div>
-            <div class="message">
-                <div class="success" id="success">
-                    Your Message Successfully Sent! 
-                               
-                </div>
-                <div class="danger" id="danger">Feilds Can't be Empty!</div>
-            </div>
-        </div>
+
+        <form action="#" method="POST">
+            <h3 class="title">REGISTERATION FORM</h3>
+
+            <input type="text" id="name" name="FullName" placeholder="Full Name" required />
+            <input type="email" id="email" name="EmailAddress" placeholder="Your Email" required />
+            <input type="number" id="contact" name="ContactNumber" placeholder="Your Contact No." required />
+            <textarea id="msg" name="Message" rows="4" placeholder="How can we Help You?" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
     </div>
 
-
-    <script src="form.js"></script>
 </body>
+
 </html>
